@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	
+	float val, soma;
+	int cont;
+	
+	soma = 0;
+	cont = 1;
+	while(cont <= 5){
+		printf("Digite o %d. numero: ", cont);
+		scanf("%f", &val);
+		soma = soma+val;
+		cont = cont + 1;
+	}
+	printf("\nO resultado da soma eh: %.2f", soma);
+	
+	return 0;
+		
+}
