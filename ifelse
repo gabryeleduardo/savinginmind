@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	
+	char ch;
+	scanf("%c", &ch);
+		if ( ch == '0'){
+			printf("Zero\n");
+		}else if( ch == '1'){
+			printf("Um\n");
+		}else if(ch == '2'){
+			printf("Dois\n");
+		}else if(ch == '3'){
+			printf("Tres\n");
+		}else{
+			printf("Numero invalido\n");
+		}
+		
+		
+	return 0;
+		
+}
