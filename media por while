@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	
+	int num, soma, cont, n, result;
+	
+	scanf("%d",&num);
+	
+	soma = 0;
+	cont = 1;
+	while(cont <= num){
+		printf("Digite o %d. numero: ", cont);
+		scanf("%d", &n);
+		soma = soma+n;
+		cont = cont + 1;
+	}
+	result = soma/num;
+	printf("\nO resultado da media eh: %d", result);
+	
+	return 0;
+		
+}
