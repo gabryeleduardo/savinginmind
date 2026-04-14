@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main(){
+	int n,x;
+	
+	scanf("%d", &n);
+	if(n>=1 && n<=100){//quantidade de testes
+		
+		for(int i=1; i<=n; i++){ //vezes que vai testar de acordo com qtd n
+			scanf("%d", &x); //le um numero pra ver se ele eh primo
+			
+			if(x<2){ //se o numero eh menor que 2 nao eh primo
+				printf("%d nao eh primo\n", x);
+			}else{ //se o numero eh maior ou igual a 2 verifica se eh primo
+				int ehPrimo = 1; // 1 quer dizer TRUE
+			 
+				for(int j=2;j*j<=x;j++){ // faz o incremento comecando pelo n 2 indo ate o valor de n*n ser maior que x
+					if(x%j==0){ // se o numero sobrar resto 0 quer dizer que ele nao e primo
+						ehPrimo = 0; // 0 quer dizer que vira FALSE
+						break;
+					}	
+				}
+				if(ehPrimo){
+					printf("%d eh primo\n", x);
+				}else{
+					printf("%d nao eh primo\n", x);
+				}
+			}
+		}
+	}
+	return 0;
+}
