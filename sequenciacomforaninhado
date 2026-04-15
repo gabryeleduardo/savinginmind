@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int x, y;
+    scanf("%d %d", &x, &y);
+
+    if ((x > 1 && x < 20) && (x < y && y < 100000)) {
+        int i, j, cont = 1;
+
+        for (i = 1; i <= y; i++){
+            for (j = 1; j <= x; j++){
+            	
+                printf("%d", cont);
+    
+                if (j < x) {
+                    printf(" ");
+                }else{
+                	printf("\n");
+				}
+                cont++;
+            }
+            if(cont>y){
+            	break;
+			}
+        }
+    }
+	return 0;
+}
